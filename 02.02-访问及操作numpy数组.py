@@ -1,6 +1,8 @@
 import numpy as np
 
 # np数组的属性
+# numpy.random.randint(low, high=None, size=None, dtype='l')
+# 函数的作用是，返回一个随机整型数，范围从低（包括）到高（不包括），即[low, high)。high: int (可选)
 x1 = np.random.randint(10, size=6)  # 一维数组
 x2 = np.random.randint(10, size=(3, 4))  # 二维数组
 x3 = np.random.randint(10, size=(3, 4, 5))  # 三维数组
@@ -28,6 +30,7 @@ print(x2[2,-1])
 # 指定索引，给数组赋值
 x1[0] = 3.14159 #如果插入一个浮点数到整形数组，浮点数会被截断为整形
 print(x1)
+
 x2[0, 0] = 12
 print(x2)
 
