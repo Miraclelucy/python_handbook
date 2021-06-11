@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn; seaborn.set()  # set plot style
+import seaborn;
+
+seaborn.set()  # set plot style
 
 L = np.random.random(100)
 print("L ", L)
@@ -53,4 +55,3 @@ plt.title('Height Distribution of US Presidents')
 plt.xlabel('height (cm)')
 plt.ylabel('number')
 plt.show()
-
