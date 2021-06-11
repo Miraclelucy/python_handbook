@@ -104,8 +104,8 @@ x = np.arange(1, 6)
 print("x ", x)
 print("np.add.reduce(x) ", np.add.reduce(x))
 print("np.multiply.reduce(x) ", np.multiply.reduce(x))
-print("np.add.accumulate(x) ", np.add.accumulate(x)) # 存储累加的中间计算结果
-print("np.multiply.accumulate(x) ", np.multiply.accumulate(x)) # 存储累乘的中间计算结果
+print("np.add.accumulate(x) ", np.add.accumulate(x))  # 存储累加的中间计算结果
+print("np.multiply.accumulate(x) ", np.multiply.accumulate(x))  # 存储累乘的中间计算结果
 
 # 创建乘法表
 print("np.multiply.outer(x, x) ", np.multiply.outer(x, x))
