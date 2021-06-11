@@ -56,6 +56,7 @@ print("x   ", x)
 print("x < 5 ", x < 5)
 print("x[x < 5] ", x[x < 5])
 
+# 将比较函数运用在西雅图市2014年的每日降雨量的分布中
 rainy = (inches > 0)
 # construct a mask of all summer days (June 21st is the 172nd day)
 days = np.arange(365)
