@@ -18,7 +18,7 @@ X = np.arange(12).reshape((3, 4))
 print("X:  ",X)
 row = np.array([0, 1, 2])
 col = np.array([2, 1, 3])
-print("X[row, col]:  ",X[row, col])  #第1个值是X[0, 2], 第2个值是X[1, 1],第3个值是X[2, 3]
+print("X[row, col]:  ",X[row, col])  # 第1个值是X[0, 2], 第2个值是X[1, 1],第3个值是X[2, 3]
 print("X[row[:, np.newaxis], col]:  ",X[row[:, np.newaxis], col])
 print("row[:, np.newaxis] * col:  ",row[:, np.newaxis] * col)
 
