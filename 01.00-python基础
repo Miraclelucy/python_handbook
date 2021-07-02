@@ -1,0 +1,36 @@
+# list列表的拼接
+print([1] + [2])
+print([1] + [2, 3])
+
+# pop()和pop(0)
+list1 = ['Google', 'Runoob', 'Taobao']
+list_pop = list1.pop()
+print(list_pop)
+list_pop = list1.pop(0)
+print(list_pop)
+
+# path和path[:]
+res = []
+res1 = []
+path = [1, 2]
+res.append(path)
+res1.append(path[:])
+path.append(3)
+print("path ", res)
+print("path[:] ", res1)
+
+# join()函数
+s1 = "-"
+s2 = ""
+seq = ("r", "u", "n", "o", "o", "b")  # 字符串序列
+print(s1.join(seq))
+print(s2.join(seq))
+
+
+# map()函数
+def square(x):
+    return x ** 2
+
+
+res3 = list(map(square, [1, 2, 3, 4, 5]))
+print("res3 ", res3)
