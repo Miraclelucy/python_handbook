@@ -68,3 +68,6 @@ if a is None:
     print('S')
 else:
     print('F')
+
+# 计算字符串长度
+print(len("digits"))
