@@ -2,14 +2,14 @@
 print([1] + [2])
 print([1] + [2, 3])
 
-# pop()和pop(0)
+# 2. pop()和pop(0)
 list1 = ['Google', 'Runoob', 'Taobao']
 list_pop = list1.pop()
 print(list_pop)
 list_pop = list1.pop(0)
 print(list_pop)
 
-# 2. path和path[:]
+# 3. path和path[:]
 res = []
 res1 = []
 path = [1, 2]
@@ -19,7 +19,7 @@ path.append(3)
 print("path ", res)
 print("path[:] ", res1)
 
-# 3. join()函数
+# 4. join()函数
 s1 = "-"
 s2 = ""
 seq = ("r", "u", "n", "o", "o", "b")  # 字符串序列
@@ -27,7 +27,7 @@ print(s1.join(seq))
 print(s2.join(seq))
 
 
-# 4. map()函数
+# 5. map()函数
 def square(x):
     return x ** 2
 
@@ -35,14 +35,14 @@ def square(x):
 res3 = list(map(square, [1, 2, 3, 4, 5]))
 print("res3 ", res3)
 
-# 5. 根据值找索引
+# 6. 根据值找索引
 inorder = [9, 3, 15, 20, 7]
 p1 = inorder.index(9)
 p2 = inorder.index(3)
 print("p1 ", p1)
 print("p2 ", p2)
 
-# 6. 比如有一个变量a，那么if not a和if a is None两者有区别吗？
+# 7. 比如有一个变量a，那么if not a和if a is None两者有区别吗？
 def fun():
     return None
 
@@ -69,10 +69,10 @@ if a is None:
 else:
     print('F')
 
-# 计算字符串长度
+# 8. 计算字符串长度
 print(len("digits"))
 
-# enumerate() 函数
+# 9. enumerate() 函数
 # 用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序
 candidates = [2,3,6,7]
 enum = enumerate(candidates)
