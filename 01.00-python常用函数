@@ -77,3 +77,7 @@ print(len("digits"))
 candidates = [2,3,6,7]
 enum = enumerate(candidates)
 print(list(enum))
+
+# 10. 初始化一个全0，长度为10的列表
+res = [0] * 10
+print(res)
