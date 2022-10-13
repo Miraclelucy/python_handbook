@@ -67,7 +67,9 @@ dataset3 = pd.DataFrame(A)
 # 在pandas种索引本身是一种结构，用整数构造索引
 ind = pd.Index([2, 3, 5, 7, 11])
 print(ind[1])
-print(ind[::2])
+print('---------------------------------')
+print(ind[::2]) # 隔2个序号取一个值
+print(ind[::-1]) # 把列倒着排一遍
 print(ind.size, ind.shape, ind.ndim, ind.dtype)
 
 # 索引是一种有序的集合，可以求交集、并集、差集
