@@ -8,4 +8,5 @@ df = pd.DataFrame({"Person":
                     "Age": [24., np.nan, 21., 33, 26],
                     "Single": [False, True, True, True, False]})
 
-print(df.count())
+print(df.count()) # 对于每个列，non-NA/null条目的数量。
+print(df.count(axis='columns')) # 对于每个行，non-NA/null条目的数量。
