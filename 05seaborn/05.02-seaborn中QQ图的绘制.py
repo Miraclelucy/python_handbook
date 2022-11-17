@@ -31,16 +31,15 @@ plt.show()
 
 # 手动画Q-Q图 来实现检验2列数据是否符合同一分布
 # 1.当2列行数相同时，直接用排序后的两列数据花散点图
-ls3 = df.sort_values(df['math score'], ascending='false').reset_index(drop=True)
-ls4 = df.sort_values(df['reading score'], ascending='false').reset_index(drop=True)
+ls3 = sorted(df['math score'])
+ls4 = sorted(df['reading score'])
 sns.regplot(x = pd.Series(ls3), y= pd.Series(ls4), ci=None, color='b', line_kws={'color':'r'})
 plt.show()
 
 # 2.当2列行数不同时，直接用排序后的两列数据画散点图
-df1 =df.sample(n=800)
-ls1 = df.sort_values(df1['math score'], ascending='false').reset_index(drop=True)
-ls2 = df.sort_values(df['reading score'], ascending='false').reset_index(drop=True)
+df1 = df.sample(n=800)
+ls1 = sorted([np.percentile(df1['math score'], i) for i in np.linspace(1,100,500)],reverse=True)
+ls2 = sorted([np.percentile(df['reading score'], i) for i in np.linspace(1,100,500)],reverse=True)
 sns.regplot(x = pd.Series(ls1), y= pd.Series(ls2), ci=None, color='b', line_kws={'color':'r'})
 plt.show()
-
 
