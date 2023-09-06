@@ -4,3 +4,5 @@
 【03-pandas基础系列】  
 【04-matplotlib基础系列】  
 【05-seaborn基础系列】 
+参考的书籍：
+https://github.com/jakevdp/PythonDataScienceHandbook
