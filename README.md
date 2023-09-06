@@ -1,4 +1,4 @@
-【00algorithmn基础系列】  
+【00-algorithmn基础系列】  
 【01-python基础系列】  
 【02-numpy基础系列】  
 【03-pandas基础系列】  
